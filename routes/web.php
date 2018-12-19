@@ -19,5 +19,5 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::get('/glogin', 'Auth\GLoginController@redirectToProvider')->name('google_login');
+Route::get('/glogin', 'Auth\GLoginController_error@redirectToProvider')->name('google_login');
 Route::get('/callback', 'Auth\GLoginController@handleProviderCallback');
